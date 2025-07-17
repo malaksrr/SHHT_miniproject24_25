@@ -13,7 +13,6 @@ from openai import OpenAI
 
 # --- Load Environment ---
 load_dotenv()
-#client = OpenAI(api_key="sk-proj-cJaruE5CV5A7ORT_bLIQe12PLnT0_a5rc4ZZc4FJRgMf6eNwJjMa2jjJIlHI6_-4swjEzHM9_GT3BlbkFJNUzyH7WZUGiz8WwwkOemD__1MEtEoQQI21WsHYMnVpq-ODqyNJSBDBfvL51Z6qGCMDY-tJtEI")
 OPENAI_API_KEY = os.getenv("OPENAI_API_KEY")
 client = OpenAI(api_key=OPENAI_API_KEY)
 init_db()
