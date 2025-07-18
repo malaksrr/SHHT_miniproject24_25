@@ -22,7 +22,8 @@ app = Flask(__name__)
 CORS(app, resources={
     r"/analyze": {"origins": "http://localhost:3000"},
     r"/history": {"origins": "http://localhost:3000"},
-    r"/clear-history": {"origins": "http://localhost:3000"}
+    r"/clear-history": {"origins": "http://localhost:3000"},
+    r"/usernames": {"origins": "http://localhost:3000"}
 })
 
 def get_chatgpt_advice(input_data, rule_result, ml_result):
