@@ -6,7 +6,6 @@ from models.burnout_model import predict_burnout
 from database import save_study_session, get_user_sessions, clear_user_history
 import sqlite3
 from database import init_db
-
 from dotenv import load_dotenv
 import os
 from openai import OpenAI
